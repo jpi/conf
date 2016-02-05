@@ -1,0 +1,4 @@
+[ "x$SSH_AGENT_PID" = "x" ] || kill "$SSH_AGENT_PID"
+eval $(ssh-agent)
+conemuc -export=ALL SSH_*
+ssh-add
